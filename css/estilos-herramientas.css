@@ -1,0 +1,175 @@
+/* Variables de color */
+:root {
+  --primary: #4361ee;
+  --primary-dark: #3a0ca3;
+  --secondary: #4cc9f0;
+  --dark: #212529;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --card-bg: #ffffff;
+}
+
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+/* Header con gradiente */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Contenedor principal */
+.tools-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Secciones de herramientas */
+.tool-section {
+  margin-bottom: 3rem;
+}
+
+.tool-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Grid de herramientas */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjetas de herramientas */
+.tool-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.tool-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--dark);
+}
+
+.tool-card p {
+  color: var(--gray);
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Lista de características */
+.tool-features {
+  margin: 1.5rem 0;
+}
+
+.tool-features li {
+  list-style: none;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tool-features i {
+  color: var(--primary);
+  width: 1.2rem;
+}
+
+/* Botones */
+.tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.tool-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gray);
+  margin-top: 3rem;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-card {
+    padding: 1.5rem;
+  }
+}

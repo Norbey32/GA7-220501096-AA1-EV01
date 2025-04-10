@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Versionamiento Local vs Remoto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>🔄 Versionamiento Local vs Remoto</h1>
+  <p>Entiende las diferencias clave entre Git (local) y plataformas como GitHub (remoto).</p>
+</header>
+
+<main>
+  <!-- Sección: Diagrama comparativo -->
+  <section class="diagram">
+    <div class="local">
+      <h2>🔧 Git (Local)</h2>
+      <div class="image-container">
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
+      </div>
+      <ul>
+        <li><strong>✅ Almacenamiento:</strong> En tu computadora.</li>
+        <li><strong>✅ Acceso:</strong> Sin necesidad de internet.</li>
+        <li><strong>✅ Ejemplo:</strong> <code>git commit</code> guarda cambios localmente.</li>
+      </ul>
+    </div>
+
+    <div class="vs">
+      <h2>🔄 VS</h2>
+    </div>
+
+    <div class="remote">
+      <h2>🌍 GitHub/GitLab/Bitbucket (Remoto)</h2>
+      <div class="image-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+      </div>
+      <ul>
+        <li><strong>✅ Almacenamiento:</strong> En servidores en la nube.</li>
+        <li><strong>✅ Acceso:</strong> Requiere internet.</li>
+        <li><strong>✅ Ejemplo:</strong> <code>git push</code> sube cambios al servidor.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección: Tabla comparativa -->
+  <section class="comparison">
+    <h2>📊 Tabla Comparativa</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Característica</th>
+        <th>Git (Local)</th>
+        <th>GitHub/GitLab (Remoto)</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Ubicación</td>
+        <td>Tu máquina</td>
+        <td>Servidores en la nube</td>
+      </tr>
+      <tr>
+        <td>Conexión</td>
+        <td>No requiere internet</td>
+        <td>Requiere internet</td>
+      </tr>
+      <tr>
+        <td>Comandos clave</td>
+        <td><code>git init</code>, <code>git commit</code></td>
+        <td><code>git clone</code>, <code>git push</code></td>
+      </tr>
+      <tr>
+        <td>Colaboración</td>
+        <td>Limitada</td>
+        <td>Multi-usuario</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Sección: Flujo de trabajo -->
+  <section class="workflow">
+    <h2>🚀 Flujo de Trabajo Típico</h2>
+    <ol>
+      <li><strong>Local:</strong> <code>git add</code> + <code>git commit</code> (guardas cambios).</li>
+      <li><strong>Remoto:</strong> <code>git push</code> (envías cambios al servidor).</li>
+      <li><strong>Equipo:</strong> <code>git pull</code> (otros descargan tus cambios).</li>
+    </ol>
+    <div class="code-example">
+                <pre><code># Ejemplo completo:
+git add .
+git commit -m "Fix bug"
+git push origin main</code></pre>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>✨ Creado para aprender Git | 📚 ¿Quieres contribuir? ¡Haz un fork en <a href="https://github.com" target="_blank">GitHub</a>!</p>
+  <p class="creator">Actualizado por <span class="highlight">Norbey D. Gutierrez Carvajal</span></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramientas de Versionamiento</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos-versionamiento.css">
+</head>
+<body>
+<header>
+  <h1><i class="fas fa-code-branch"></i> Herramientas de Versionamiento</h1>
+  <p class="subtitle">Sistemas para el control de cambios en el código fuente</p>
+</header>
+
+<main>
+  <div class="tools-container">
+    <!-- Sistemas de Control de Versiones -->
+    <section class="tool-section">
+      <h2><i class="fas fa-history"></i> Sistemas Principales</h2>
+      <div class="tools-grid">
+        <article class="tool-card">
+          <div class="tool-icon git">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3>Git</h3>
+          <p>Sistema de control de versiones distribuido creado por Linus Torvalds en 2005. Dominante en la industria del desarrollo de software.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-check"></i> <strong>Ventajas:</strong> Rapidez, ramas económicas, trabajo offline</li>
+            <li><i class="fas fa-project-diagram"></i> <strong>Modelo:</strong> Distribuido (cada clon es un repositorio completo)</li>
+            <li><i class="fas fa-cogs"></i> <strong>Comandos clave:</strong> <code>commit</code>, <code>branch</code>, <code>merge</code></li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://git-scm.com/" class="tool-btn">Documentación <i class="fas fa-book"></i></a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-icon svn">
+            <i class="fas fa-archive"></i>
+          </div>
+          <h3>Subversion (SVN)</h3>
+          <p>Sistema centralizado de control de versiones, popular antes del auge de Git. Aún usado en algunos entornos empresariales.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-check"></i> <strong>Ventajas:</strong> Estructura simple, control de acceso granular</li>
+            <li><i class="fas fa-project-diagram"></i> <strong>Modelo:</strong> Cliente-Servidor centralizado</li>
+            <li><i class="fas fa-cogs"></i> <strong>Conceptos clave:</strong> Revisions, trunk/branches/tags</li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://subversion.apache.org/" class="tool-btn">Sitio oficial <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-icon mercurial">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Mercurial</h3>
+          <p>Sistema de control de versiones distribuido alternativo a Git, conocido por su simplicidad y rendimiento.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-check"></i> <strong>Ventajas:</strong> Fácil aprendizaje, consistencia</li>
+            <li><i class="fas fa-project-diagram"></i> <strong>Modelo:</strong> Distribuido (como Git)</li>
+            <li><i class="fas fa-cogs"></i> <strong>Comandos clave:</strong> <code>commit</code>, <code>push</code>, <code>pull</code></li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://www.mercurial-scm.org/" class="tool-btn">Documentación <i class="fas fa-book"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Plataformas de Alojamiento -->
+    <section class="tool-section">
+      <h2><i class="fas fa-cloud"></i> Plataformas de Alojamiento</h2>
+      <div class="tools-grid">
+        <article class="tool-card">
+          <div class="tool-icon github">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>La plataforma más popular para alojar proyectos Git, adquirida por Microsoft en 2018. Centro de la comunidad open-source.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-star"></i> <strong>Features únicas:</strong> GitHub Actions, Copilot, Pages</li>
+            <li><i class="fas fa-users"></i> <strong>Social coding:</strong> Pull Requests, Issues, Discussions</li>
+            <li><i class="fas fa-chart-line"></i> <strong>Estadísticas:</strong> 100M+ repositorios, 40M+ usuarios</li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://github.com/" class="tool-btn">Explorar <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://docs.github.com/" class="tool-btn secondary">Docs <i class="fas fa-file-alt"></i></a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-icon gitlab">
+            <i class="fab fa-gitlab"></i>
+          </div>
+          <h3>GitLab</h3>
+          <p>Plataforma completa DevOps con CI/CD integrado. Ofrece versión community edition de código abierto.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-tools"></i> <strong>DevOps completo:</strong> Desde planificación hasta monitoreo</li>
+            <li><i class="fas fa-server"></i> <strong>Auto-hospedaje:</strong> Disponible en CE y EE</li>
+            <li><i class="fas fa-random"></i> <strong>CI/CD:</strong> Pipelines configurables con Docker</li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://gitlab.com/" class="tool-btn">Versión Cloud <i class="fas fa-cloud"></i></a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-icon bitbucket">
+            <i class="fab fa-bitbucket"></i>
+          </div>
+          <h3>Bitbucket</h3>
+          <p>Solución de Atlassian para equipos que ya usan Jira y Confluence. Enfocado en empresas.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-link"></i> <strong>Integraciones:</strong> Jira, Trello, Bamboo</li>
+            <li><i class="fas fa-code"></i> <strong>Soporte:</strong> Git y Mercurial (heredado)</li>
+            <li><i class="fas fa-building"></i> <strong>Enfoque:</strong> Equipos empresariales</li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://bitbucket.org/" class="tool-btn">Para equipos <i class="fas fa-users"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Herramientas Complementarias -->
+    <section class="tool-section">
+      <h2><i class="fas fa-tools"></i> Herramientas Complementarias</h2>
+      <div class="tools-grid">
+        <article class="tool-card">
+          <div class="tool-icon cli">
+            <i class="fas fa-terminal"></i>
+          </div>
+          <h3>Git CLI</h3>
+          <p>Interfaz de línea de comandos nativa de Git. Dominarla es esencial para cualquier desarrollador profesional.</p>
+          <div class="code-sample">
+                            <pre><code># Flujo básico:
+git add .
+git commit -m "mensaje"
+git push origin main
+
+# Ramas:
+git checkout -b nueva-rama
+git merge otra-rama</code></pre>
+          </div>
+          <div class="tool-footer">
+            <a href="https://git-scm.com/docs" class="tool-btn">Comandos <i class="fas fa-terminal"></i></a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-icon gui">
+            <i class="fas fa-mouse-pointer"></i>
+          </div>
+          <h3>Git GUI</h3>
+          <p>Interfaces gráficas para Git como Sourcetree, GitKraken o el cliente oficial de GitHub.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-check-circle"></i> <strong>Ventajas:</strong> Visualización gráfica del historial</li>
+            <li><i class="fas fa-user-friends"></i> <strong>Para:</strong> Nuevos desarrolladores o operaciones complejas</li>
+            <li><i class="fas fa-desktop"></i> <strong>Populares:</strong> Sourcetree, GitKraken, GitHub Desktop</li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://www.sourcetreeapp.com/" class="tool-btn">Sourcetree <i class="fas fa-tree"></i></a>
+            <a href="https://www.gitkraken.com/" class="tool-btn secondary">GitKraken <i class="fas fa-anchor"></i></a>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <div class="tool-icon diff">
+            <i class="fas fa-file-code"></i>
+          </div>
+          <h3>Diff Tools</h3>
+          <p>Herramientas especializadas para comparación de código como Beyond Compare, KDiff3 y Meld.</p>
+          <ul class="tool-features">
+            <li><i class="fas fa-check-circle"></i> <strong>Uso:</strong> Resolución de conflictos</li>
+            <li><i class="fas fa-columns"></i> <strong>Visualización:</strong> Comparación lado a lado</li>
+            <li><i class="fas fa-random"></i> <strong>Integración:</strong> Con Git y otros VCS</li>
+          </ul>
+          <div class="tool-footer">
+            <a href="https://www.scootersoftware.com/" class="tool-btn">Beyond Compare <i class="fas fa-balance-scale"></i></a>
+            <a href="https://meldmerge.org/" class="tool-btn secondary">Meld <i class="fas fa-code-branch"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <p>© <span id="current-year"></span> Guía de Herramientas de Versionamiento</p>
+  <p class="creator">Actualizado por <span class="highlight">Norbey D. Gutierrez Carvajal</span></p>
+  <div class="footer-links">
+    <a href="#"><i class="fas fa-book"></i> Glosario de términos</a>
+    <a href="#"><i class="fas fa-history"></i> Historia del versionamiento</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
